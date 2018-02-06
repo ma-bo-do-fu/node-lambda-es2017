@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive",
-    "compile": "npx babel src --out-dir compiled",
+    "compile": "babel src --out-dir compiled",
     "package": "node-lambda package",
     "deploy": "node-lambda deploy -H /compiled/index.handler"
   },
