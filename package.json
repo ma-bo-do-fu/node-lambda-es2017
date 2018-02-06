@@ -1,0 +1,35 @@
+{
+  "name": "node-lambda-es2017",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "compile": "npx babel src --out-dir compiled",
+    "package": "node-lambda package",
+    "deploy": "node-lambda deploy -H /compiled/index.handler"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma-bo-do-fu/node-lambda-es2017.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma-bo-do-fu/node-lambda-es2017/issues"
+  },
+  "homepage": "https://github.com/ma-bo-do-fu/node-lambda-es2017#readme",
+  "dependencies": {
+    "node-lambda": "^0.11.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.39",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/register": "^7.0.0-beta.39",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "sinon": "^4.2.2"
+  }
+}

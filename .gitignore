@@ -57,3 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# ignore compiled files
+compiled/
+
+# node-lambda
+.lambda/
+build/
+deploy.env
