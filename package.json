@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --recursive",
     "compile": "babel src --out-dir compiled",
-    "package": "node-lambda package",
+    "local-run": "node-lambda run -H /compiled/index.handler",
+    "package": "node-lambda package -H /compiled/index.handler",
     "deploy": "node-lambda deploy -H /compiled/index.handler"
   },
   "repository": {
