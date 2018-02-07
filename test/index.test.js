@@ -16,12 +16,12 @@ describe('src/index.js', function () {
     });
 
     describe('handler', function () {
-        it('should return completed message when the function is called.', function () {
-            index.handler(event, context, callback);
+        it('should return completed message when the function is called.', async function () {
+            await index.handler(event, context, callback);
             assert.match(callback.args[0][1].body, /success/);
         });
-        it('should import module.', function () {
-            index.handler(event, context, callback);
+        it('should import module.', async function () {
+            await index.handler(event, context, callback);
             assert.match(callback.args[0][1].body, /8/);
         });
     });
